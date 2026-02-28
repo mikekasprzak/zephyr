@@ -1,7 +1,8 @@
 # Copyright (c) 2024 Michael Hope
+# Copyright (c) 2026 Mike Kasprzak (distraction.engineer)
 # SPDX-License-Identifier: Apache-2.0
 
-description: WCH CH32V00x AFIO
+description: WCH AFIO
 
 compatible: "wch,afio"
 
@@ -36,14 +37,6 @@ child-binding:
           - output-low
 
     properties:
-      slew-rate:
-        type: string
-        default: "max-speed-2mhz"
-        enum:
-          - "max-speed-10mhz"
-          - "max-speed-2mhz"
-          - "max-speed-30mhz"
-
       pinmux:
         required: true
         type: array

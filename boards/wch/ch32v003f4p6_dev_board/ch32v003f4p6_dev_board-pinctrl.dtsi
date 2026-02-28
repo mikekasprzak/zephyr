@@ -11,7 +11,6 @@
 			pinmux = <USART1_TX_PD5_0>;
 			output-high;
 			drive-push-pull;
-			slew-rate = "max-speed-10mhz";
 		};
 
 		group2 {
