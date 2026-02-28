@@ -1,0 +1,8 @@
+/*
+ * Copyright (c) 2026 Mike Kasprzak (distraction.engineer)
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+#include <wch/ch5xx/common.dtsi>
+#include <wch/qingke/v4c.dtsi>

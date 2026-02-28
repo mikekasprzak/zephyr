@@ -1,0 +1,12 @@
+/*
+ * Copyright (c) 2026 Mike Kasprzak (distraction.engineer)
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * References: https://www.wch-ic.com/products/QingKe.html?categoryId=77
+ *             https://www.wch-ic.com/downloads/QingKeV4_Processor_Manual_PDF.html
+ */
+
+#define SOC_WATCHDOG
+
+#include <wch/qingke/v4.dtsi>

@@ -1,0 +1,27 @@
+/*
+ * Copyright (c) 2026 Mike Kasprzak (distraction.engineer)
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+#include <freq.h>
+#include <mem.h>
+
+/ {
+	soc {
+		spi0: spi@40013000 {
+			compatible = "wch,spi";
+			reg = <0x40013000 0x24>;
+			clocks = <&rcc CH32V00X_CLOCK_SPI1>;
+			interrupt-parent = <&pfic>;
+			interrupts = <33>;
+			status = "disabled";
+			#address-cells = <1>;
+			#size-cells = <0>;
+		};
+	};
+};
+
+&cpu0 {
+	clock-frequency = <DT_FREQ_M(48)>;
+};

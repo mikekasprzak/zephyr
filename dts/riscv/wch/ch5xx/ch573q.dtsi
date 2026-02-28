@@ -1,0 +1,8 @@
+/*
+ * Copyright (c) 2026 Mike Kasprzak (distraction.engineer)
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+/* NOTE: Despite the name, this is more like a CH571 than a CH573 */
+#include <wch/ch5xx/ch571.dtsi>

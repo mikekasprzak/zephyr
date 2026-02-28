@@ -1,0 +1,26 @@
+/*
+ * Copyright (c) 2026 Mike Kasprzak (distraction.engineer)
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * References: https://www.wch-ic.com/products/QingKe.html?categoryId=77
+ *             https://www.wch-ic.com/downloads/QingKeV3_Processor_Manual_PDF.html
+ */
+
+#include "skeleton.dtsi"
+#include <wch/qingke/common/soc.dtsi>
+
+/ {
+	cpus {
+		#address-cells = <1>;
+		#size-cells = <0>;
+
+		cpu0: cpu@0 {
+			device_type = "cpu";
+			compatible = "wch,qingke-v3b", "riscv";
+			reg = <0>;
+			riscv,isa-base = "rv32i";
+			riscv,isa-extensions = "i", "m", "c", "b", "zicsr", "zifencei";
+		};
+	};
+};

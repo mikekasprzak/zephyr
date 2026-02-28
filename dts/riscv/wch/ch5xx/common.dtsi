@@ -1,0 +1,30 @@
+/*
+ * Copyright (c) 2026 Mike Kasprzak (distraction.engineer)
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+#include <freq.h>
+#include <mem.h>
+
+// Things that are different about CH5xx boards:
+//   * spi0 is at 0x40004000 instead of 0x40013000
+
+/ {
+	soc {
+		spi0: spi@40004000 {
+			compatible = "wch,spi";
+			reg = <0x40004000 0x24>;
+			clocks = <&rcc CH32V00X_CLOCK_SPI1>;
+			interrupt-parent = <&pfic>;
+			interrupts = <33>;
+			status = "disabled";
+			#address-cells = <1>;
+			#size-cells = <0>;
+		};
+	};
+};
+
+&cpu0 {
+	clock-frequency = <DT_FREQ_M(48)>;
+};

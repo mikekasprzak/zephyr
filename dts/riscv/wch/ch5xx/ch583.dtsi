@@ -1,0 +1,37 @@
+/*
+ * Copyright (c) 2026 Mike Kasprzak (distraction.engineer)
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+#include <mem.h>
+
+#define SOC_USER_SRAM		DT_SIZE_K(24)
+#define SOC_USER_CODEFLASH	DT_SIZE_K(448)
+#define SOC_USER_DATAFLASH	DT_SIZE_K(32)
+#define SOC_SYS_SRAM		DT_SIZE_K(2)
+#define SOC_SYS_BOOTLOADER	DT_SIZE_K(24)
+#define SOC_SYS_INFOFLASH	DT_SIZE_K(8)
+
+#define SOC_NGPIOA		8
+#define SOC_NGPIOB		7
+#define SOC_NGPIOC		8
+#define SOC_NGPIOD		8
+
+#include <wch/ch5xx/common.dtsi>
+#include <wch/qingke/v4a.dtsi>
+
+/ {
+	soc {
+		spi1: spi@40004400 {
+			compatible = "wch,spi";
+			reg = <0x40004400 0x24>;
+			clocks = <&rcc CH32V00X_CLOCK_SPI1>;
+			interrupt-parent = <&pfic>;
+			interrupts = <33>;
+			status = "disabled";
+			#address-cells = <1>;
+			#size-cells = <0>;
+		};
+	};
+};
