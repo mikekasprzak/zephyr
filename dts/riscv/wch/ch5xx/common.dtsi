@@ -6,6 +6,11 @@
 
 #include <freq.h>
 #include <mem.h>
+#include <wch/qingke-v4c.dtsi>
+#include <zephyr/dt-bindings/gpio/gpio.h>
+#include <zephyr/dt-bindings/i2c/i2c.h>
+#include <zephyr/dt-bindings/clock/ch32v00x-clocks.h>
+#include <zephyr/dt-bindings/dma/ch32v003-dma.h>
 
 // Things that are different about CH5xx boards:
 //   * spi0 is at 0x40004000 instead of 0x40013000
