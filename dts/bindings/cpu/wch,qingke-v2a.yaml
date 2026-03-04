@@ -1,0 +1,10 @@
+# Copyright (c) 2024 Dhiru Kholia <dhiru.kholia@gmail.com>
+# Copyright (c) 2025 MASSDRIVER EI (massdriver.space)
+# Copyright (c) 2026 Mike Kasprzak (distraction.engineer)
+# SPDX-License-Identifier: Apache-2.0
+
+description: WCH QingKe V2A RISC-V MCU
+
+compatible: "wch,qingke-v2a"
+
+include: riscv,cpus.yaml
