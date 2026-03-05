@@ -22,4 +22,6 @@
 			riscv,isa-extensions = "i", "m", "a", "c", "f", "zicsr", "zifencei";
 		};
 	};
+
+	// INTERRUPTS WORK DIFFERENT!
 };
