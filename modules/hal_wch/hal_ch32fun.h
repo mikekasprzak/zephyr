@@ -17,7 +17,7 @@
 #endif /* defined(CONFIG_SOC_CH32V003) */
 
 #if defined(CONFIG_SOC_SERIES_CH32V00X)
-#define CH32V00x    1
+#define CH32V00x 1
 #include <ch32fun.h>
 #endif /* defined(CONFIG_SOC_SERIES_CH32V00X) */
 
