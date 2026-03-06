@@ -5,5 +5,24 @@ config SOC_CH592
 	bool
 	select SOC_SERIES_QINGKE_V4C
 
+config SOC_CH592X
+	bool
+	select SOC_CH592
+
+config SOC_CH592F
+	bool
+	select SOC_CH592
+
+config SOC_CH592A
+	bool
+	select SOC_CH592
+
+config SOC_CH592D
+	bool
+	select SOC_CH592
+
 config SOC
-	default "ch592" if SOC_CH592
+	default "ch592x" if SOC_CH592X
+	default "ch592f" if SOC_CH592F
+	default "ch592a" if SOC_CH592A
+	default "ch592d" if SOC_CH592D

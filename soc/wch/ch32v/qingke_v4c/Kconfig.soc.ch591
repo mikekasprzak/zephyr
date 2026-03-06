@@ -1,0 +1,23 @@
+# Copyright (c) 2026 Mike Kasprzak (distraction.engineer)
+# SPDX-License-Identifier: Apache-2.0
+
+config SOC_CH591
+	bool
+	select SOC_SERIES_QINGKE_V4C
+
+config SOC_CH591F
+	bool
+	select SOC_CH591
+
+config SOC_CH591D
+	bool
+	select SOC_CH591
+
+config SOC_CH591R
+	bool
+	select SOC_CH591
+
+config SOC
+	default "ch591f" if SOC_CH591F
+	default "ch591d" if SOC_CH591D
+	default "ch591r" if SOC_CH591R
