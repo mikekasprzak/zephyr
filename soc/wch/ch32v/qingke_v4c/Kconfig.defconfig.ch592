@@ -1,0 +1,12 @@
+# Copyright (c) 2026 Mike Kasprzak (distraction.engineer)
+# SPDX-License-Identifier: Apache-2.0
+
+if SOC_CH592
+
+config VECTOR_TABLE_SIZE
+	default 104
+
+config NUM_IRQS
+	default 128
+
+endif # SOC_CH592

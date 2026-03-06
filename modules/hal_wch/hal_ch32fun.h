@@ -16,10 +16,10 @@
 #include <ch32fun.h>
 #endif /* defined(CONFIG_SOC_CH32V003) */
 
-#if defined(CONFIG_SOC_SERIES_CH32V00X)
-#define CH32V00x 1
+#if defined(CONFIG_SOC_SERIES_CH5XX)
+#define CH5XX 1
 #include <ch32fun.h>
-#endif /* defined(CONFIG_SOC_SERIES_CH32V00X) */
+#endif /* defined(CONFIG_SOC_SERIES_CH5XX) */
 
 #if defined(CONFIG_SOC_SERIES_QINGKE_V4B)
 #define CH32V20x    1
@@ -28,9 +28,14 @@
 #endif /* defined(CONFIG_SOC_SERIES_QINGKE_V4B) */
 
 #if defined(CONFIG_SOC_SERIES_QINGKE_V4C)
+#if defined(CONFIG_SOC_CH32V20X)
 #define CH32V20x 1
-#if defined(CONFIG_SOC_CH32V208)
+#elif defined(CONFIG_SOC_CH32V208)
+#define CH32V20x 1
 #define CH32V20x_D8W 1
+#elif defined(CONFIG_SOC_CH591) || defined(CONFIG_SOC_CH592)
+#define CH59x 1
+#define CH591_CH592 1
 #endif
 #include <ch32fun.h>
 #endif /* defined(CONFIG_SOC_SERIES_QINGKE_V4C) */

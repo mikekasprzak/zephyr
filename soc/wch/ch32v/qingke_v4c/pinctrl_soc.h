@@ -1,5 +1,6 @@
 /*
- * Copyright (c) 2024 Michael Hope
+ * Copyright (c) 2024 Michael Hope <michaelh@juju.nz>
+ * Copyright (c) 2026 Mike Kasprzak (distraction.engineer)
  *
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -10,7 +11,7 @@
 /**
  * @brief Type to hold a pin's pinctrl configuration.
  */
-struct ch32v208_pinctrl_soc_pin {
+struct qingke_v4c_pinctrl_soc_pin {
 	uint32_t config: 22;
 	bool bias_pull_up: 1;
 	bool bias_pull_down: 1;
@@ -21,7 +22,7 @@ struct ch32v208_pinctrl_soc_pin {
 	uint8_t slew_rate: 2;
 };
 
-typedef struct ch32v208_pinctrl_soc_pin pinctrl_soc_pin_t;
+typedef struct qingke_v4c_pinctrl_soc_pin pinctrl_soc_pin_t;
 
 #define Z_PINCTRL_STATE_PIN_INIT(node_id, prop, idx)                                               \
 	{                                                                                          \

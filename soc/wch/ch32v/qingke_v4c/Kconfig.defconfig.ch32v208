@@ -6,6 +6,9 @@ if SOC_CH32V208
 config VECTOR_TABLE_SIZE
 	default 104
 
+config USE_VECTOR_TABLE_OFFSET
+	default y
+
 config NUM_IRQS
 	default 128
 

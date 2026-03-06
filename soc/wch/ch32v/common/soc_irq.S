@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2024 Michael Hope
+ * Copyright (c) 2024 Michael Hope <michaelh@juju.nz>
  *
  * SPDX-License-Identifier: Apache-2.0
  */
