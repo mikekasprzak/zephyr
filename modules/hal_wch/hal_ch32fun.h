@@ -16,11 +16,6 @@
 #include <ch32fun.h>
 #endif /* defined(CONFIG_SOC_CH32V003) */
 
-#if defined(CONFIG_SOC_SERIES_CH5XX)
-#define CH5XX 1
-#include <ch32fun.h>
-#endif /* defined(CONFIG_SOC_SERIES_CH5XX) */
-
 #if defined(CONFIG_SOC_SERIES_QINGKE_V4B)
 #define CH32V20x    1
 #define CH32V20x_D6 1
